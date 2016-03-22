@@ -1,0 +1,14 @@
+@mixin squals($value: 40px){
+    width: $value;
+    height: $value;
+}
+
+$back: #dadffd;
+
+div {
+    background:$back;
+    @include squals(36px);
+    p {
+        color:red;
+    }
+}
